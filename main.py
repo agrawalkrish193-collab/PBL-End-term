@@ -42,11 +42,11 @@ df['occasion'] = df['usage'].map(occasion_map)
 
 df = df.dropna(subset=['occasion'])
 
-# Final check
+
 print("Final Shape:", df.shape)
 print(df.isnull().sum())
 
-# Save file
+
 df.to_csv('cleaned_fashion_data.csv', index=False)
 
-print("✅ Cleaned data saved successfully!")
+print("Cleaned data saved successfully!")
